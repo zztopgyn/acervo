@@ -1,0 +1,56 @@
+<div class="container">
+	<!-- Novo album. -->
+	<form class="form-horizontal">
+		<fieldset>
+			<!-- Form Name -->
+			<legend>Album</legend>
+			<!-- Codigo -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textinput">Codigo</label>
+				<div class="col-md-6">
+					<input id="txt_codigo" name="codigo" type="text"
+						placeholder="Coloque aqui o codigo" class="form-control input-md"
+						ng-model="album.codigo">
+				</div>
+			</div>
+			<!-- Nome -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textinput">Nome</label>
+				<div class="col-md-6">
+					<input id="txt_nome" name="nome" type="text"
+						placeholder="Coloque aqui o nome" class="form-control input-md"
+						ng-model="album.nome">
+				</div>
+			</div>
+			<!-- Tipo -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textinput">Tipo</label>
+				<div class="col-md-6">
+					<input id="txt_tipo" name="tipo" type="text"
+						placeholder="Coloque aqui o tipo (vinyl, etc)"
+						class="form-control input-md" ng-model="album.tipo">
+				</div>
+			</div>
+			<!-- Quantidade -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textinput">Quantidade</label>
+				<div class="col-md-6">
+					<input id="txt_quantidade" name="quantidade" type="text"
+						placeholder="Coloque aqui a quantidade"
+						class="form-control input-md" ng-model="album.quantidade">
+				</div>
+			</div>
+			{{album.data}}
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label"></label>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-primary"
+						ng-click="novoAlbum(album)">Novo</button>
+				</div>
+			</div>
+
+		</fieldset>
+	</form>
+</div>
+<!-- Container -->
